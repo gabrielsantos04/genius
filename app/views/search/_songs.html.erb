@@ -1,0 +1,17 @@
+<% songs.each do |song| %>
+  <div class="song-result">
+    <h3><%= song["result"]["title"] %></h3>
+  </div>
+<% end %>
+
+<% if songs.empty? and !error.present? %>
+  <div class="no-results">
+    <p>Artist not found.</p>
+  </div>
+<% end %>
+
+<% if error.present? %>
+  <div class="error-message">
+    <p><%= error %></p>
+  </div>
+<% end %>

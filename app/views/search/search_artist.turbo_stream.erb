@@ -1,0 +1,3 @@
+<%= turbo_stream.update "songs_frame" do %>
+  <%= render 'songs', songs: @results || [], error: @error %>
+<% end %>
