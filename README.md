@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Before running the application
+Copy the file ./env.example to ./env and fill in the required environment variables.
+The access token for Genius API.
 
-Things you may want to cover:
+# Run the rails server
+```bash
+rails server
+```
 
-* Ruby version
+# Access the root path
+Open your web browser and navigate to `http://localhost:3000/` to access the application.
 
-* System dependencies
+# Try to search an artist
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Run the tests
+```bash
+bundle exec rspec
+```
+This command will execute the test suite to ensure everything is working correctly.
